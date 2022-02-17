@@ -1,4 +1,4 @@
-import Login from '../pages/Login';
+import LoginPage from '../pages/Login';
 
  export default class Logging{
 
@@ -8,17 +8,17 @@ import Login from '../pages/Login';
     
     verifyLoginPage(){
         
-        Login.open();
-        expect(Login.UsernameTXBDisplay()).toBe(true);
-        expect(Login.PasswordTXBDisplay()).toBe(true);
-        expect(Login.LoginBTNDisplay()).toBe(true);
-        expect(Login.SignUpBTNDisplay).toBe(true);
+        LoginPage.open();
+        expect(LoginPage.UsernameTXBDisplay()).toBe(true);
+        expect(LoginPage.PasswordTXBDisplay()).toBe(true);
+        expect(LoginPage.LoginBTNDisplay()).toBe(true);
+        expect(LoginPage.SignUpBTNDisplay()).toBe(true);
 
         return this;
     }
 
     loginWithCredential(credential){
-        Login.open().LoginCredential(credential.usernamer,credential.password);
+        LoginPage.open().LoginCredential(credential.usernamer,credential.password);
         return this;
     }
 
