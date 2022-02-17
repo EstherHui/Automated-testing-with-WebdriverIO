@@ -15,19 +15,23 @@ class Login{
     }
 
     UsernameTXBDisplay(){
-        return $(USERNAME_TXB).isDisplayed(); // if TXB is display return true if not return false
+        username = $(USERNAME_TXB);
+        return username.isDisplayed(); // if TXB is display return true if not return false
     }
 
     PasswordTXBDisplay(){
-        return $(PASSWORD_TXB).isDisplayed();
+        password = $(PASSWORD_TXB);
+        return password.isDisplayed();
     }
 
     LoginBTNDisplay(){
-        return $(LOGIN_BTN).isDisplayed();
+        logBTN = $(LOGIN_BTN);
+        return logBTN.isDisplayed();
     }
 
     SignUpBTNDisplay(){
-        return $(SIGNUP_BTN).isDisplayed();
+        signBTN = $(SIGNUP_BTN);
+        return signBTN.isDisplayed();
     }
 
     LoginCredential(username, password){
@@ -38,7 +42,4 @@ class Login{
         return this; // return object
     }
 
-    
-
 }
-export default new Login();
