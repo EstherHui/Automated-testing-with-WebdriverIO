@@ -1,8 +1,7 @@
 const { default: $ } = require("webdriverio/build/commands/browser/$");
-
 const PAGE_NAV = 'http://uwu.securelayers.cloud/login';
-const USERNAME_TXB = 'input[name = "username"]';
-const PASSWORD_TXB = 'input[name = "password"]';
+const USERNAME_TXB = '[name = "username"]';
+const PASSWORD_TXB = '[name = "password"]';
 const LOGIN_BTN = 'button[type = "submit"]';
 const FORGOT_PW_BTN = 'button[contains(text(),"Forgot Password?")]';
 const SIGNUP_BTN = 'button[contains(text(),"SIGN UP")]';
@@ -49,3 +48,4 @@ class Login{
     }
 
 }
+export default new Login();
