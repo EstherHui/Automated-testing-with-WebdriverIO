@@ -8,6 +8,7 @@ import LoginPage from '../pages/Login';
     
     verifyLoginPage(){
         
+        
         LoginPage.open();
         expect(LoginPage.UsernameTXBDisplay()).toBe(true);
         expect(LoginPage.PasswordTXBDisplay()).toBe(true);
@@ -18,7 +19,7 @@ import LoginPage from '../pages/Login';
     }
 
     loginWithCredential(credential){
-        LoginPage.open().LoginCredential(credential.usernamer,credential.password);
+        LoginPage.open().LoginCredential(credential.username,credential.password);
         return this;
     }
 
