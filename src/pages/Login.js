@@ -10,6 +10,7 @@ const SIGNUP_BTN = 'button[contains(text(),"SIGN UP")]';
 class Login{
 
     open(){
+
         browser.url(PAGE_NAV);
         return this;
     }
@@ -32,6 +33,11 @@ class Login{
     SignUpBTNDisplay(){
         signBTN = $(SIGNUP_BTN);
         return signBTN.isDisplayed();
+    }
+
+    ForgotPassBTNDisplay(){
+        forgotBTN = $(FORGOT_PW_BTN);
+        return forgotBTN.isDisplayed();
     }
 
     LoginCredential(username, password){
