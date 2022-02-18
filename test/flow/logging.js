@@ -6,10 +6,10 @@ class Logging {
         
         LoginPage.open();
         expect(LoginPage.Username_TXB).toBe(true);
-        //expect(LoginPage.PasswordTXB.isDisplayed()).toBe(true);
-        //expect(LoginPage.LoginBTN.isDisplayed()).toBe(true);
-        //expect(LoginPage.ForgotPassBTN.isDisplayed()).toBe(true);
-        //expect(LoginPage.SignBTN.isDisplayed()).toBe(true);
+        expect(LoginPage.Password_TXB).toBe(true);
+        expect(LoginPage.Login_BTN).toBe(true);
+        expect(LoginPage.ForgotPassBTN).toBe(true);
+        expect(LoginPage.SignBTN).toBe(true);
 
         return this;
     }
